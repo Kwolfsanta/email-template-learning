@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #cccccc;
+    }
+    table {
+      border-spacing: 0;
+    }
+    td {
+      padding: 0;
+    }
+    img {
+      border: 0;
+    }
+    .wrapper {
+      width: 100%;
+      /* 保证table在wrapper内，且列宽是由表格宽度和列宽度去设定的 */
+      table-layout: fixed; 
+      background-color: #cccccc;
+      padding-bottom: 60px;
+    }
+    .main {
+      /* 虽然不设置也是可以的，但是设置了的话，dark mode会revert颜色， 因此还是建议加上*/
+      background-color: #ffffff;
+      margin: 0 auto;
+      width: 100%;
+      max-width: 600px;
+      border-spacing: 0;
+      font-family: sans-serif;
+      color: #4a4a4a;
+    }
+    .two-columns {
+      /* 许多email clients，甚至是google chrome都会给a标签添加空间（spacing）
+          因此，我们必须要使用font-size: 0 去进行一个初始化
+       */
+      font-size: 0;
+      text-align: center;
+    }
+    .two-columns .column {
+      width: 100%; /* 100%是为了在移动端可以100%展示。要达到各占一半的效果可以使用max-width控制 */
+      max-width: 300px;
+      display: inline-block;
+      vertical-align: top;
+    }
+    @media screen and (max-width: 600px) {
+    }
+    @media screen and (max-width: 400px) {
+    }
+  </style>
+</head>
+<body>
+  <center class="wrapper">
+    <table class="main" width="100%">
+<!-- BLUE BORDER -->
+      <tr>
+        <td height="8" style="background-color: #289dcf;"></td>
+      </tr>
+<!-- HEADER SECTION -->
+      <!-- 由于需要多列，因此我们在td中去嵌套table -->
+      <tr>
+        <td style="padding: 14px 0 4px">
+          <table width="100%">
+            <tr>
+              <td class="two-columns">
+                <table class="column">
+                  <tr>
+                    <td style="padding: 0 62px 10px;">
+                      <a href="https://w3newbie.com/email-course/">
+                        <img src="img/insight.png" alt="Logo" width="180" title="Logo">
+                      </a>
+                    </td>
+                  </tr>
+                </table>
+                <table class="column">
+                  <tr>
+                    <td style="padding: 10px 62px;">
+                      <a href="#">
+                        <img src="img/circle-facebook.png" alt="Logo" width="32" title="Logo">
+                      </a>
+                      <a href="#">
+                        <img src="img/circle-twitter.png" alt="Logo" width="32" title="Logo">
+                      </a>
+                      <a href="#">
+                        <img src="img/circle-youtube.png" alt="Logo" width="32" title="Logo">
+                      </a>
+                      <a href="#">
+                        <img src="img/circle-linkedin.png" alt="Logo" width="32" title="Logo">
+                      </a>
+                      <a href="#">
+                        <img src="img/circle-instagram.png" alt="Logo" width="32" title="Logo">
+                      </a>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+<!-- BANNER IMAGE -->
+      <tr>
+        <td>
+          <a href="#"><img src="img/banner.jpg" alt="" width="600"></a>
+        </td>
+      </tr>
+<!-- BLUE BORDER -->
+
+<!-- TITLE, TEXT & BUTTON -->
+      <tr>
+        <td>
+          <table width="100%">
+
+          </table>
+        </td>
+      </tr>
+
+<!-- BLUE BORDER -->
+
+<!-- THREE COLUMNS SECTION -->
+<tr>
+  <td>
+    <table width="100%">
+
+    </table>
+  </td>
+</tr>
+
+<!-- BLUE BORDER -->
+
+<!-- TWO COLUMNS SECTION -->
+<tr>
+  <td>
+    <table width="100%">
+
+    </table>
+  </td>
+</tr>
+
+<!-- FOOTER SECTION -->
+<tr>
+  <td>
+    <table width="100%">
+
+    </table>
+  </td>
+</tr>
+    </table>
+  </center>
+</body>
+</html>
